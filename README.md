@@ -16,7 +16,7 @@ guide before creating a pull request.
 
 ## Prettier
 
-> Note: Package is a peer-dependency of this package, and should be installed
+> Note: Prettier is a peer-dependency of this package, and should be installed
 > at the root of your project.
 >
 > See: https://prettier.io/docs/en/install.html
