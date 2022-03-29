@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+      - canary
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_BOT_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
+          GIT_AUTHOR_NAME: ${{ secrets.RELEASE_BOT_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.RELEASE_BOT_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
