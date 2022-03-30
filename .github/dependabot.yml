@@ -6,10 +6,3 @@ updates:
       interval: 'daily'
     commit-message:
       prefix: 'ci(deps)'
-
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'daily'
-    commit-message:
-      prefix: 'build(deps)'
