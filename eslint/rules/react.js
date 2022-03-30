@@ -5,7 +5,6 @@
 const disabledRules = {
   // We recommend using TypeScript over `prop-types`, as `prop-types` can add
   // to a project's build size.
-  // https://github.com/vercel/style-guide/issues/44
   'react/prop-types': 'off',
   // Disable requiring React to be imported, as this is no longer required.
   'react/react-in-jsx-scope': 'off',
@@ -49,8 +48,6 @@ module.exports = {
      *
      * This rule is a part of `react/recommended`, but we've modified it to
      * allow referrer.
-     *
-     * See: https://github.com/vercel/style-guide/issues/79
      *
      * 🔧 Fixable - https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
      */
