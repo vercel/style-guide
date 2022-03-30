@@ -27,8 +27,6 @@ module.exports = {
     /**
      * Disallow default exports.
      *
-     * See: https://github.com/vercel/style-guide/issues/83
-     *
      * 🚫 Not fixable - https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
      */
     'import/no-default-export': 'error',

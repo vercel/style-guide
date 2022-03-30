@@ -76,7 +76,9 @@ To check for outdated dependencies, run:
 npx npm-check-updates
 ```
 
-This lists which dependencies have updates.
+This lists which dependencies have updates. Unlike `npm outdated`,
+`npm-check-updates` has a `-u` flag which conveniently updates `package.json`.
 
-It's important to read the release notes for each package, including minor
-updates, as rules and extended configs may have changed.
+When updating packages, it's important to read the release notes for every
+updated package, including minor updates, as rules and extended configs may
+have changed.
