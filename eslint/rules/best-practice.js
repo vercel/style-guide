@@ -25,7 +25,7 @@ module.exports = {
      */
     'default-case-last': 'error',
     /**
-     * Require triple equals (`===` and `!===`).
+     * Require triple equals (`===` and `!==`).
      *
      * 🔧 Fixable - https://eslint.org/docs/rules/eqeqeq
      */
