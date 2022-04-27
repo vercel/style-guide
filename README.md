@@ -72,14 +72,25 @@ information, you'll need to provide the path to your `tsconfig.json`.
 For more information, see: https://typescript-eslint.io/docs/linting/type-linting
 
 ```js
+const { resolve } = require('path');
+
+const project = resolve(__dirname, 'tsconfig.json');
+
 module.exports = {
+  root: true,
   extends: [
     require.resolve('@vercel/style-guide/eslint/node'),
     require.resolve('@vercel/style-guide/eslint/typescript'),
   ],
   parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project,
+      },
+    },
   },
 };
 ```
