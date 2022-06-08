@@ -82,6 +82,12 @@ module.exports = {
      */
     'react/no-array-index-key': 'warn',
     /**
+     * Disallow creating components inside components without memoization.
+     *
+     * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
+     */
+    'react/no-unstable-nested-components': 'error',
+    /**
      * Disallow closing tags for components without children.
      *
      * 🔧 Fixable - https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
