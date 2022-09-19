@@ -16,7 +16,7 @@ jobs:
         uses: ./.github/composite-actions/install
 
       - name: Run commitlint check
-        run: npm exec commitlint -- -f ${{ github.event.pull_request.base.sha }}
+        run: pnpm commitlint -f ${{ github.event.pull_request.base.sha }}
 
   eslint:
     name: 'ESLint'
@@ -29,7 +29,7 @@ jobs:
         uses: ./.github/composite-actions/install
 
       - name: Run ESLint check
-        run: npm run eslint-check
+        run: pnpm eslint-check
 
   prettier:
     name: 'Prettier'
@@ -42,4 +42,4 @@ jobs:
         uses: ./.github/composite-actions/install
 
       - name: Run Prettier check
-        run: npm run prettier-check
+        run: pnpm prettier-check

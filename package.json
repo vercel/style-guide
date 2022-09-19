@@ -17,6 +17,10 @@
     "prettier",
     "typescript.json"
   ],
+  "packageManager": "pnpm@7.12.0",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "eslint-check": "eslint --max-warnings=0 .",
     "prepare": "husky install",

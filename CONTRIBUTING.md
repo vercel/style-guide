@@ -1,5 +1,21 @@
 # Contributing to Vercel's Style Guide
 
+## Installing
+
+This project uses pnpm.
+
+To get started, run:
+
+```sh
+corepack enable
+```
+
+Then, run:
+
+```sh
+pnpm i
+```
+
 ## Before creating a pull request
 
 Before creating a pull request, please raise an issue.
