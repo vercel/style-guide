@@ -66,12 +66,9 @@ module.exports = {
           'builtin', // Node.js built-in modules
           'external', // Packages
           'internal', // Aliased modules
-          'unknown', // Undetermined (probably aliased)
           'parent', // Relative parent
           'sibling', // Relative sibling
           'index', // Relative index
-          'object', // TypeScript "object" imports
-          'type', // TypeScript `type` imports
         ],
         'newlines-between': 'never',
       },
