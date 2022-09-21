@@ -13,6 +13,12 @@ module.exports = {
      */
     'no-console': 'error',
     /**
+     * Disallow expressions where the operation doesn't affect the value.
+     *
+     * 🚫 Not fixable - https://eslint.org/docs/rules/no-console
+     */
+    'no-constant-binary-expression': 'error',
+    /**
      * Disallow returning values from Promise executor functions.
      *
      * 🚫 Not fixable - https://eslint.org/docs/rules/no-promise-executor-return
