@@ -71,7 +71,7 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@7.12.0",
+  "packageManager": "pnpm@7.12.1",
   "engines": {
     "node": ">=16"
   },
