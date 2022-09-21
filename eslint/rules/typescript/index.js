@@ -96,13 +96,6 @@ module.exports = {
      */
     '@typescript-eslint/no-confusing-non-null-assertion': 'warn',
     /**
-     * Extends `eslint/no-duplicate-imports`, adding support for type-only
-     * imports and exports.
-     *
-     * 🚫 Not fixable - https://typescript-eslint.io/rules/no-duplicate-imports/
-     */
-    '@typescript-eslint/no-duplicate-imports': 'error',
-    /**
      * Disallow the use of classes as namespaces.
      *
      *
