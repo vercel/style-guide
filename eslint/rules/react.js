@@ -19,7 +19,6 @@ module.exports = {
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
      */
     'react/button-has-type': 'warn',
-
     /**
      * Require consistent function type for function components.
      *
