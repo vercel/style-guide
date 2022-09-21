@@ -6,4 +6,8 @@ module.exports = {
     // using React with Testing Library.
     'plugin:testing-library/react',
   ],
+  rules: {
+    '@typescript-eslint/unbound-method': 'off',
+    'jest/unbound-method': 'error',
+  },
 };
