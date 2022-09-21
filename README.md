@@ -44,6 +44,7 @@ The following optional configs are available:
 
 - `@vercel/style-guide/eslint/jest`
 - `@vercel/style-guide/eslint/next` (requires `@vercel/style-guide/eslint/react`)
+- `@vercel/style-guide/eslint/playwright-test`
 - `@vercel/style-guide/eslint/react`
 - `@vercel/style-guide/eslint/typescript` (requires [additional configuration](#configuring-eslint-for-typescript))
 
