@@ -19,12 +19,19 @@ module.exports = {
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
      */
     'react/button-has-type': 'warn',
+
     /**
      * Require consistent function type for function components.
      *
      * 🔧 Fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/HEAD/docs/rules/function-component-definition.md
      */
     'react/function-component-definition': 'warn',
+    /**
+     * Require destructuring and symmetric naming of `useState` hook value and setter variables.
+     *
+     * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md
+     */
+    'react/hook-use-state': 'warn',
     /**
      * Require consistent boolean attributes notation in JSX.
      *
