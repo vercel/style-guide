@@ -17,10 +17,6 @@
     "prettier",
     "typescript.json"
   ],
-  "packageManager": "pnpm@7.12.0",
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "eslint-check": "eslint --max-warnings=0 .",
     "prepare": "husky install",
@@ -45,7 +41,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.6.4",
     "eslint-plugin-tsdoc": "^0.2.17",
-    "eslint-plugin-unicorn": "^43.0.2"
+    "eslint-plugin-unicorn": "^43.0.2",
+    "prettier-plugin-packagejson": "^2.2.18"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -67,15 +64,19 @@
     "typescript": "^4.8.3"
   },
   "peerDependenciesMeta": {
-    "@next/eslint-plugin-next": {
+    "@babel/core": {
       "optional": true
     },
-    "@babel/core": {
+    "@next/eslint-plugin-next": {
       "optional": true
     },
     "typescript": {
       "optional": true
     }
+  },
+  "packageManager": "pnpm@7.12.0",
+  "engines": {
+    "node": ">=16"
   },
   "publishConfig": {
     "access": "public"
