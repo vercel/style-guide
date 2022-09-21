@@ -95,6 +95,33 @@ module.exports = {
 };
 ```
 
+### Configuring custom components for `jsx-a11y`
+
+It's common practice for React apps to have shared components like `Button`,
+which wrap native elements. You can pass this information along to `jsx-a11y`
+via the `components` setting.
+
+The below list is not exhaustive.
+
+```js
+module.exports = {
+  root: true,
+  extends: [require.resolve('@vercel/style-guide/eslint/react')],
+  settings: {
+    'jsx-a11y': {
+      components: {
+        Article: 'article',
+        Button: 'button',
+        Image: 'img',
+        Input: 'input',
+        Link: 'a',
+        Video: 'video',
+      },
+    },
+  },
+};
+```
+
 ### Scoped configuration with `overrides`
 
 ESLint configs can be scoped to include/exclude specific paths. This ensures

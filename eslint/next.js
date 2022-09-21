@@ -12,10 +12,7 @@ const babelOptions = {
 };
 
 module.exports = {
-  extends: [
-    'plugin:@next/next/recommended',
-    require.resolve('./rules/next/jsx-a11y'),
-  ],
+  extends: ['plugin:@next/next/recommended'],
   overrides: [
     {
       files: JAVASCRIPT_FILES,
