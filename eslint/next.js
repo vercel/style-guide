@@ -13,7 +13,7 @@ const babelOptions = {
 
 module.exports = {
   extends: [
-    'plugin:@next/next/core-web-vitals',
+    'plugin:@next/next/recommended',
     require.resolve('./rules/next/jsx-a11y'),
   ],
   overrides: [
