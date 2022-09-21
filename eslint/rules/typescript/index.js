@@ -41,7 +41,7 @@ module.exports = {
       // Anything type-like should be written in PascalCase.
       {
         format: ['PascalCase'],
-        selector: 'typeLike',
+        selector: ['typeLike', 'enumMember'],
       },
       // Interfaces cannot be prefixed with `I`, or have restricted names.
       {
