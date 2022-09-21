@@ -1,4 +1,7 @@
 const { TYPESCRIPT_FILES } = require('./constants');
+const requirePackage = require('./utils/require-package');
+
+requirePackage('typescript', 'typescript');
 
 module.exports = {
   overrides: [
