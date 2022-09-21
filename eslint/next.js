@@ -1,4 +1,8 @@
 const { JAVASCRIPT_FILES } = require('./constants');
+const requirePackage = require('./utils/require-package');
+
+requirePackage('next', 'next');
+requirePackage('next', '@next/eslint-plugin-next');
 
 const babelOptions = {
   presets: (() => {

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: './eslint/node',
+  extends: ['./eslint/node'],
   overrides: [
     {
       files: ['eslint/rules/**'],
