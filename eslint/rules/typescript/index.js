@@ -121,6 +121,12 @@ module.exports = {
      */
     '@typescript-eslint/no-meaningless-void-operator': 'error',
     /**
+     * Disallow members of unions and intersections that do nothing or override type information.
+     *
+     * 🚫 Not fixable - https://typescript-eslint.io/rules/no-redundant-type-constituents/
+     */
+    '@typescript-eslint/no-redundant-type-constituents': 'warn',
+    /**
      * Disallow unnecessary equality comparisons against boolean literals.
      *
      * 🔧 Fixable - https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare/
