@@ -94,6 +94,12 @@ module.exports = {
      */
     'react/no-array-index-key': 'warn',
     /**
+     * Disallow usage of unknown DOM property.
+     *
+     * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+     */
+    'react/no-unknown-property': ['error', { ignore: ['jsx'] }],
+    /**
      * Disallow creating unstable components inside components.
      *
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
