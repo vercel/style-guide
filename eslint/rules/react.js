@@ -98,7 +98,7 @@ module.exports = {
      *
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
      */
-    'react/no-unknown-property': ['error', { ignore: ['jsx'] }],
+    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
     /**
      * Disallow creating unstable components inside components.
      *
