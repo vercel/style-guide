@@ -3,6 +3,8 @@
  * disable them.
  */
 const disabledRules = {
+  // This is better handled by TypeScript.
+  'react/no-unknown-property': 'off',
   // We recommend using TypeScript over `prop-types`, as `prop-types` can add
   // to a project's build size.
   'react/prop-types': 'off',
@@ -93,12 +95,6 @@ module.exports = {
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
      */
     'react/no-array-index-key': 'warn',
-    /**
-     * Disallow usage of unknown DOM property.
-     *
-     * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
-     */
-    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
     /**
      * Disallow creating unstable components inside components.
      *
