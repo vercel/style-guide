@@ -20,7 +20,7 @@ jobs:
         uses: ./.github/composite-actions/install
 
       - name: Publish
-        run: pnpx semantic-release
+        run: pnpm semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_BOT_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
@@ -28,3 +28,21 @@ jobs:
           GIT_AUTHOR_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
           GIT_COMMITTER_NAME: ${{ secrets.RELEASE_BOT_NAME }}
           GIT_COMMITTER_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
+
+  update-canary:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    needs: [release]
+    name: Update canary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_BOT_PAT }}
+
+      - name: Back-merge main into canary
+        run: |
+          git checkout canary
+          git merge --ff-only main
+          git push

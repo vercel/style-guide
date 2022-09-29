@@ -14,18 +14,14 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Merge canary into main
-        uses: devmasx/merge-branch@8b86512c768bec19827894f0a39a776809668189
+      - name: Check out
+        uses: actions/checkout@v3
         with:
-          type: now
-          from_branch: canary
-          target_branch: main
-          github_token: ${{ secrets.RELEASE_BOT_PAT }}
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_BOT_PAT }}
 
-      - name: Back-merge main into canary
-        uses: devmasx/merge-branch@8b86512c768bec19827894f0a39a776809668189
-        with:
-          type: now
-          from_branch: main
-          target_branch: canary
-          github_token: ${{ secrets.RELEASE_BOT_PAT }}
+      - name: Merge canary into main
+        run: |
+          git checkout main
+          git merge --ff-only canary
+          git push
