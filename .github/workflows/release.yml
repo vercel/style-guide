@@ -1,30 +1,31 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
-      - canary
+  workflow_dispatch:
+    inputs:
+      acknowledge:
+        description: 'I understand that this action will publish everything on canary to the latest tag'
+        required: true
+        type: boolean
 
 jobs:
   release:
+    if: ${{ inputs.acknowledge }}
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Merge canary into main
+        uses: devmasx/merge-branch@8b86512c768bec19827894f0a39a776809668189
         with:
-          persist-credentials: false
+          type: now
+          from_branch: canary
+          target_branch: main
+          github_token: ${{ secrets.RELEASE_BOT_PAT }}
 
-      - name: Install
-        uses: ./.github/composite-actions/install
-
-      - name: Release
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_BOT_PAT }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN_ELEVATED }}
-          GIT_AUTHOR_NAME: ${{ secrets.RELEASE_BOT_NAME }}
-          GIT_AUTHOR_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
-          GIT_COMMITTER_NAME: ${{ secrets.RELEASE_BOT_NAME }}
-          GIT_COMMITTER_EMAIL: ${{ secrets.RELEASE_BOT_EMAIL }}
+      - name: Back-merge main into canary
+        uses: devmasx/merge-branch@8b86512c768bec19827894f0a39a776809668189
+        with:
+          type: now
+          from_branch: main
+          target_branch: canary
+          github_token: ${{ secrets.RELEASE_BOT_PAT }}
