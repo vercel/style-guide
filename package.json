@@ -1,6 +1,6 @@
 {
   "name": "@vercel/style-guide",
-  "version": "4.0.1-canary.1",
+  "version": "4.0.1",
   "description": "Vercel's engineering style guide",
   "homepage": "https://github.com/vercel/style-guide#readme",
   "bugs": {
