@@ -7,7 +7,7 @@ jobs:
     name: 'Commitlint'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -22,7 +22,7 @@ jobs:
     name: 'ESLint'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out
         uses: actions/checkout@v3
 
       - name: Install
@@ -35,7 +35,7 @@ jobs:
     name: 'Prettier'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out
         uses: actions/checkout@v3
 
       - name: Install
