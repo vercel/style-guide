@@ -14,6 +14,24 @@ The following configs are available, and are designed to be used together.
 Please read our [contributing](https://github.com/vercel/style-guide/blob/main/CONTRIBUTING.md)
 guide before creating a pull request.
 
+## Installation
+
+All of our configs are contained in one package, `@vercel/style-guide`. To install:
+
+```sh
+# If you use npm
+npm i @vercel/style-guide
+
+# If you use pmpm
+pnpm i @vercel/style-guide
+
+# If you use Yarn
+yarn add @vercel/style-guide
+```
+
+Some of our ESLint configs require peer dependencies. We'll note those
+alongside the available configs in the [ESLint](#eslint) section.
+
 ## Prettier
 
 > Note: Prettier is a peer-dependency of this package, and should be installed
@@ -36,19 +54,24 @@ To use the shared Prettier config, set the following in `package.json`.
 >
 > See: https://eslint.org/docs/user-guide/getting-started#installation-and-usage
 
-This ESLint config is designed to be composable. The base configs,
-`@vercel/style-guide/eslint/node` or `@vercel/style-guide/eslint/browser`, set
-up a project for JavaScript and should always be first in `extends`.
+This ESLint config is designed to be composable.
 
-The following optional configs are available:
+The following base configs are available. You can use one or both of these
+configs, but they should always be first in `extends`:
 
 - `@vercel/style-guide/eslint/browser`
-- `@vercel/style-guide/eslint/jest`
-- `@vercel/style-guide/eslint/next` (requires `@vercel/style-guide/eslint/react`)
 - `@vercel/style-guide/eslint/node`
+
+Note that you can scope configs, so that configs only target specific files.
+For more information, see: [Scoped configuration with `overrides`](#scoped-configuration-with-overrides).
+
+The following additional configs are available:
+
+- `@vercel/style-guide/eslint/jest`
+- `@vercel/style-guide/eslint/next` (requires `@next/eslint-plugin-next` to be installed at the same version as `next`)
 - `@vercel/style-guide/eslint/playwright-test`
 - `@vercel/style-guide/eslint/react`
-- `@vercel/style-guide/eslint/typescript` (requires [additional configuration](#configuring-eslint-for-typescript))
+- `@vercel/style-guide/eslint/typescript` (requires `typescript` to be installed and [additional configuration](#configuring-eslint-for-typescript))
 
 > You'll need to use `require.resolve` to provide ESLint with absolute paths,
 > due to an issue around ESLint config resolution (see
@@ -128,7 +151,7 @@ module.exports = {
 ### Scoped configuration with `overrides`
 
 ESLint configs can be scoped to include/exclude specific paths. This ensures
-that rules don't "leak" to places where those rules don't apply.
+that rules don't "leak" into places where those rules don't apply.
 
 In this example, Jest rules are only being applied to files matching Jest's
 default test match pattern.
