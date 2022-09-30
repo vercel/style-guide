@@ -1,5 +1,20 @@
 # The Vercel Style Guide
 
+<a aria-label="Vercel logo" href="https://vercel.com">
+  <img alt="" src="https://img.shields.io/badge/Made%20by%20Vercel-000000.svg?style=flat-square&logo=Vercel&labelColor=000">
+</a>
+<a aria-label="NPM version" href="https://www.npmjs.com/package/@vercel/style-guide">
+  <img alt="" src="https://img.shields.io/npm/v/@vercel/style-guide.svg?style=flat-square&labelColor=000000">
+</a>
+<a aria-label="License" href="https://github.com/vercel/style-guide/blob/canary/LICENSE.md">
+  <img alt="" src="https://img.shields.io/npm/l/@vercel/style-guide.svg?style=flat-square&labelColor=000000">
+</a>
+<a aria-label="CI Status" href="https://github.com/vercel/style-guide/actions/workflows/quality.yml?query=event%3Apush">
+  <img alt="" src="https://img.shields.io/github/workflow/status/vercel/style-guide/Quality?event=push&style=flat-square&labelColor=000000">
+</a>
+
+## Introduction
+
 This repository is the home of Vercel's style guide, which includes configs for
 popular linting and styling tools.
 

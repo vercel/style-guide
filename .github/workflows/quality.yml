@@ -1,6 +1,11 @@
 name: Quality
 
-on: pull_request
+on:
+  pull_request:
+  push:
+    branches:
+      - 'canary'
+      - 'main'
 
 jobs:
   commitlint:
