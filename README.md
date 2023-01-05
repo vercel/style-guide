@@ -35,13 +35,13 @@ All of our configs are contained in one package, `@vercel/style-guide`. To insta
 
 ```sh
 # If you use npm
-npm i @vercel/style-guide
+npm i --save-dev @vercel/style-guide
 
 # If you use pmpm
-pnpm i @vercel/style-guide
+pnpm i --save-dev @vercel/style-guide
 
 # If you use Yarn
-yarn add @vercel/style-guide
+yarn add --dev @vercel/style-guide
 ```
 
 Some of our ESLint configs require peer dependencies. We'll note those
