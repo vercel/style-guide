@@ -34,7 +34,6 @@
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@rushstack/eslint-patch": "^1.2.0",
-    "@tsconfig/recommended": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "eslint-config-prettier": "^8.5.0",

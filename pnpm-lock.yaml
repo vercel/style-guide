@@ -7,7 +7,6 @@ specifiers:
   '@commitlint/config-conventional': ^17.1.0
   '@rushstack/eslint-patch': ^1.2.0
   '@semantic-release/git': ^10.0.1
-  '@tsconfig/recommended': ^1.0.2
   '@typescript-eslint/eslint-plugin': ^5.38.1
   '@typescript-eslint/parser': ^5.38.1
   eslint: ^8.24.0
@@ -35,7 +34,6 @@ dependencies:
   '@babel/core': 7.19.3
   '@babel/eslint-parser': 7.19.1_ogeofmzlraie6c2b5yqacorv6u
   '@rushstack/eslint-patch': 1.2.0
-  '@tsconfig/recommended': 1.0.2
   '@typescript-eslint/eslint-plugin': 5.38.1_c7qepppml3d4ahu5cnfwqe6ltq
   '@typescript-eslint/parser': 5.38.1_ypn2ylkkyfa5i233caldtndbqa
   eslint-config-prettier: 8.5.0_eslint@8.24.0
@@ -1110,13 +1108,6 @@ packages:
         integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==,
       }
     dev: true
-
-  /@tsconfig/recommended/1.0.2:
-    resolution:
-      {
-        integrity: sha512-dbHBtbWBOjq0/otpopAE02NT2Cm05Qe2JsEKeCf/wjSYbI2hz8nCqnpnOJWHATgjDz4fd3dchs3Wy1gQGjfN6w==,
-      }
-    dev: false
 
   /@types/glob/7.2.0:
     resolution:
