@@ -81,6 +81,14 @@ module.exports = {
           'index', // Relative index
         ],
         'newlines-between': 'never',
+        pathGroups: [
+          // Sort test mocks to the top of the file to ensure that they're in place when it runs
+          {
+            group: 'builtin',
+            pattern: './*.test.mocks',
+            position: 'before',
+          },
+        ],
       },
     ],
   },
