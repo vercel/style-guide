@@ -1,0 +1,3 @@
+# the default formatting by pnpm is not the same as Prettier's yaml formatting
+# so we disable Prettier here.
+pnpm-lock.yaml
