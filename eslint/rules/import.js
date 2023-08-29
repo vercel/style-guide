@@ -37,8 +37,7 @@ module.exports = {
      */
     'import/no-extraneous-dependencies': [
       'error',
-      // TODO: Enable this line after the next release of `eslint-plugin-import` (v2.27+)
-      // { includeInternal: true, includeTypes: true },
+      { includeInternal: true, includeTypes: true },
     ],
     /**
      * Disallow mutable exports.
