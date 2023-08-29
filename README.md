@@ -35,13 +35,13 @@ All of our configs are contained in one package, `@vercel/style-guide`. To insta
 
 ```sh
 # If you use npm
-npm i @vercel/style-guide
+npm i --save-dev @vercel/style-guide
 
 # If you use pmpm
-pnpm i @vercel/style-guide
+pnpm i --save-dev @vercel/style-guide
 
 # If you use Yarn
-yarn add @vercel/style-guide
+yarn add --dev @vercel/style-guide
 ```
 
 Some of our ESLint configs require peer dependencies. We'll note those
@@ -83,6 +83,7 @@ For more information, see: [Scoped configuration with `overrides`](#scoped-confi
 The following additional configs are available:
 
 - `@vercel/style-guide/eslint/jest`
+- `@vercel/style-guide/eslint/jest-react` (includes rules for `@testing-library/react`)
 - `@vercel/style-guide/eslint/next` (requires `@next/eslint-plugin-next` to be installed at the same version as `next`)
 - `@vercel/style-guide/eslint/playwright-test`
 - `@vercel/style-guide/eslint/react`

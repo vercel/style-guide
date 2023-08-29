@@ -14,6 +14,5 @@ const overridableDefaults = {
 module.exports = {
   ...overridableDefaults,
   singleQuote: true,
-  trailingComma: 'all',
   plugins: ['prettier-plugin-packagejson'],
 };
