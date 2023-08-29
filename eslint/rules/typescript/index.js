@@ -75,6 +75,15 @@ module.exports = {
      */
     '@typescript-eslint/prefer-regexp-exec': 'warn',
     /**
+     * Require Array#sort calls to provide a compare function.
+     *
+     * 🚫 Not fixable - https://typescript-eslint.io/rules/require-array-sort-compare/
+     */
+    '@typescript-eslint/require-array-sort-compare': [
+      'error',
+      { ignoreStringArrays: true },
+    ],
+    /**
      * Require exhaustive checks when using union types in switch statements.
      *
      * This ensures cases are considered when items are later added to a union.
