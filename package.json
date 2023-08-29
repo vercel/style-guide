@@ -62,7 +62,7 @@
   },
   "peerDependencies": {
     "@next/eslint-plugin-next": "^12.3.0",
-    "eslint": "^8.24.0",
+    "eslint": "^8.48.0",
     "prettier": "^3.0.0",
     "typescript": "^4.8.0"
   },
