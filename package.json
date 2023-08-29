@@ -44,7 +44,7 @@
     "eslint-plugin-playwright": "^0.16.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.7.0",
+    "eslint-plugin-testing-library": "^6.0.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-unicorn": "^48.0.1",
     "prettier-plugin-packagejson": "^2.4.5"
