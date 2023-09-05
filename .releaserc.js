@@ -15,7 +15,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        // eslint-disable-next-line no-template-curly-in-string
+        // eslint-disable-next-line no-template-curly-in-string -- required by `semantic-release`.
         message: 'release: ${nextRelease.version}',
       },
     ],

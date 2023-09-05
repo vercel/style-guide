@@ -20,7 +20,10 @@ module.exports = {
      *
      * 🚫 Not fixable - https://typescript-eslint.io/rules/explicit-function-return-type/
      */
-    '@typescript-eslint/explicit-function-return-type': 'warn',
+    '@typescript-eslint/explicit-function-return-type': [
+      'warn',
+      { allowExpressions: true },
+    ],
     /**
      * Require using function property types in method signatures.
      *
@@ -71,6 +74,15 @@ module.exports = {
      * 🔧 Fixable - https://typescript-eslint.io/rules/prefer-regexp-exec/
      */
     '@typescript-eslint/prefer-regexp-exec': 'warn',
+    /**
+     * Require Array#sort calls to provide a compare function.
+     *
+     * 🚫 Not fixable - https://typescript-eslint.io/rules/require-array-sort-compare/
+     */
+    '@typescript-eslint/require-array-sort-compare': [
+      'error',
+      { ignoreStringArrays: true },
+    ],
     /**
      * Require exhaustive checks when using union types in switch statements.
      *

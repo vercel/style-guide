@@ -3,8 +3,6 @@
  * disable them.
  */
 const disabledRules = {
-  // This is better handled by TypeScript.
-  'react/no-unknown-property': 'off',
   // We recommend using TypeScript over `prop-types`, as `prop-types` can add
   // to a project's build size.
   'react/prop-types': 'off',

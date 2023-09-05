@@ -9,8 +9,8 @@
 <a aria-label="License" href="https://github.com/vercel/style-guide/blob/canary/LICENSE.md">
   <img alt="" src="https://img.shields.io/npm/l/@vercel/style-guide.svg?style=flat-square&labelColor=000000">
 </a>
-<a aria-label="CI Status" href="https://github.com/vercel/style-guide/actions/workflows/quality.yml?query=event%3Apush">
-  <img alt="" src="https://img.shields.io/github/workflow/status/vercel/style-guide/Quality?event=push&style=flat-square&labelColor=000000">
+<a aria-label="CI status" href="https://github.com/vercel/style-guide/actions/workflows/quality.yml?query=event%3Apush+branch%3Amain">
+  <img alt="" src="https://img.shields.io/github/actions/workflow/status/vercel/style-guide/quality.yml?event=push&branch=main&style=flat-square&labelColor=000000">
 </a>
 
 ## Introduction
@@ -83,6 +83,7 @@ For more information, see: [Scoped configuration with `overrides`](#scoped-confi
 The following additional configs are available:
 
 - `@vercel/style-guide/eslint/jest`
+- `@vercel/style-guide/eslint/jest-react` (includes rules for `@testing-library/react`)
 - `@vercel/style-guide/eslint/next` (requires `@next/eslint-plugin-next` to be installed at the same version as `next`)
 - `@vercel/style-guide/eslint/playwright-test`
 - `@vercel/style-guide/eslint/react`

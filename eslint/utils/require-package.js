@@ -1,6 +1,8 @@
 // @ts-check
 const pkgJson = require('../../package.json');
 
+const log = (message = '') => process.stderr.write(`${message}\n`);
+
 /**
  * @returns {string} The name of the package manager.
  */
@@ -20,16 +22,14 @@ module.exports = (configName, packageName) => {
     const packageManager = readPackageManager();
     const command = packageManager === 'yarn' ? 'add' : 'install';
 
-    /* eslint-disable no-console */
-    console.error(
+    log(
       `The \`${configName}\` config requires an optional peer dependency, which has not been installed.`,
     );
-    console.error();
-    console.error('To install it, run:');
-    console.error(
+    log();
+    log('To install it, run:');
+    log(
       `- ${packageManager} ${command} ${packageName}@${pkgJson.peerDependencies[packageName]}`,
     );
-    /* eslint-enable no-console */
 
     process.exit(1);
   }
