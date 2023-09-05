@@ -2,7 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2015"
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "target": "ES2022",
+    "moduleResolution": "NodeNext"
   }
 }

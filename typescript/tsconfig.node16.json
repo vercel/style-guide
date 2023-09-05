@@ -2,11 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
     "lib": ["ES2021"],
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "target": "ES2021"
+    "module": "node16",
+    "target": "ES2021",
+    "moduleResolution": "node16"
   }
 }

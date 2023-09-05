@@ -202,10 +202,27 @@ module.exports = {
 
 ## TypeScript
 
+This guide provides multiple TypeScript configuration options. These configs correlate to the major Node.js versions and configure the appropriate `lib`, `module`, `target`, and `moduleResolution` settings. The table below specifies the config name with the Node.js version.
+
+| Node.js Version | TypeScript Config       |
+| --------------- | ----------------------- |
+| v16             | `typescript/node16`     |
+| v18             | `typescript/node18`     |
+| v20             | `typescript/node20`     |
+| v20 (ESM)       | `typescript/node20-esm` |
+
+> When using `node20-esm`, don't forget to set `{ "type": "module" }` in your `package.json`
+
 To use the shared TypeScript config, set the following in `tsconfig.json`.
 
 ```json
 {
-  "extends": "@vercel/style-guide/typescript"
+  "extends": "@vercel/style-guide/typescript/node16"
 }
 ```
+
+The base TypeScript config is also available as `@vercel/style-guide/typescript` which only specifies a set of general rules such as `esModuleInterop`, `strict`, and `noUncheckedIndexedAccess`.
+
+> Why do `node20` and `node20-esm` use the same `lib` and `target` as `node18`?
+>
+> The lib and target fields are the same because Node.js v18 implemented support for some ES2023 methods. And since TypeScript does not allow us to specify types for individual features (and rather sets of features such as `ESNext.AsyncIterable`) we must use `ES2023` in the `lib` array for Node.js v18. Furthermore, once TypeScript releases a `"target": "ES2023"`, then the Node.js v20 configuration will be updated to that (assuming Node.js v20 fully supports ES2023).
