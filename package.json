@@ -15,8 +15,7 @@
     "./typescript": "./typescript/tsconfig.base.json",
     "./typescript/node16": "./typescript/tsconfig.node16.json",
     "./typescript/node18": "./typescript/tsconfig.node18.json",
-    "./typescript/node20": "./typescript/tsconfig.node20.json",
-    "./typescript/node20-esm": "./typescript/tsconfig.node20-esm.json"
+    "./typescript/node20": "./typescript/tsconfig.node20.json"
   },
   "main": "index.js",
   "files": [

@@ -2,9 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "lib": ["ES2021"],
+    "lib": ["es2021"],
     "module": "node16",
-    "target": "ES2021",
+    "target": "es2021",
     "moduleResolution": "node16"
   }
 }
