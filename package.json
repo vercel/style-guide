@@ -12,6 +12,8 @@
   },
   "license": "MPL-2.0",
   "exports": {
+    "./eslint/*": "./eslint/*.js",
+    "./prettier": "./prettier/index.js",
     "./typescript": "./typescript/tsconfig.base.json",
     "./typescript/node16": "./typescript/tsconfig.node16.json",
     "./typescript/node18": "./typescript/tsconfig.node18.json",
