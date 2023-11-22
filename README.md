@@ -202,10 +202,20 @@ module.exports = {
 
 ## TypeScript
 
+This style guide provides multiple TypeScript configs. These configs correlate to the LTS Node.js versions, providing the appropriate `lib`, `module`, `target`, and `moduleResolution` settings for each version. The following configs are available:
+
+| Node.js Version | TypeScript Config                       |
+| --------------- | --------------------------------------- |
+| v16             | `@vercel/style-guide/typescript/node16` |
+| v18             | `@vercel/style-guide/typescript/node18` |
+| v20             | `@vercel/style-guide/typescript/node20` |
+
 To use the shared TypeScript config, set the following in `tsconfig.json`.
 
 ```json
 {
-  "extends": "@vercel/style-guide/typescript"
+  "extends": "@vercel/style-guide/typescript/node16"
 }
 ```
+
+The base TypeScript config is also available as [`@vercel/style-guide/typescript`](./typescript/tsconfig.base.json) which only specifies a set of general rules. You should inherit from this file when setting custom `lib`, `module`, `target`, and `moduleResolution` settings.
