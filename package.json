@@ -1,6 +1,6 @@
 {
   "name": "@vercel/style-guide",
-  "version": "5.0.2-canary.1",
+  "version": "5.1.0",
   "description": "Vercel's engineering style guide",
   "homepage": "https://github.com/vercel/style-guide#readme",
   "bugs": {
@@ -69,7 +69,7 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@next/eslint-plugin-next": ">=12.3.0 <14",
+    "@next/eslint-plugin-next": ">=12.3.0 <15",
     "eslint": ">=8.48.0 <9",
     "prettier": ">=3.0.0 <4",
     "typescript": ">=4.8.0 <6"
