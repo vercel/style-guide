@@ -114,7 +114,7 @@ information, you'll need to provide the path to your `tsconfig.json`.
 For more information, see: https://typescript-eslint.io/docs/linting/type-linting
 
 ```js
-const { resolve } = require('path');
+const { resolve } = require('node:path');
 
 const project = resolve(__dirname, 'tsconfig.json');
 
