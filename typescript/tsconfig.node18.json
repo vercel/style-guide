@@ -4,9 +4,9 @@
   "display": "Vercel Node 18",
   "docs": "https://github.com/vercel/style-guide",
   "compilerOptions": {
-    "lib": ["es2023"],
+    "lib": ["esnext"],
     "module": "node16",
-    "target": "es2023",
+    "target": "esnext",
     "moduleResolution": "node16"
   }
 }
