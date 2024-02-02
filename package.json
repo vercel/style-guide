@@ -1,6 +1,6 @@
 {
   "name": "@vercel/style-guide",
-  "version": "5.2.0-canary.1",
+  "version": "5.2.0-canary.2",
   "description": "Vercel's engineering style guide",
   "homepage": "https://github.com/vercel/style-guide#readme",
   "bugs": {
