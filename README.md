@@ -37,7 +37,7 @@ All of our configs are contained in one package, `@vercel/style-guide`. To insta
 # If you use npm
 npm i --save-dev @vercel/style-guide
 
-# If you use pmpm
+# If you use pnpm
 pnpm i --save-dev @vercel/style-guide
 
 # If you use Yarn
