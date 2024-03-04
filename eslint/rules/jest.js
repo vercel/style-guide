@@ -12,11 +12,5 @@ module.exports = {
      * 🔧 Fixable - https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
      */
     'jest/prefer-lowercase-title': 'warn',
-    /**
-     * Require test cases and hooks to be inside a `describe` block.
-     *
-     * 🚫 Not fixable - https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-top-level-describe.md
-     */
-    'jest/require-top-level-describe': 'error',
   },
 };
