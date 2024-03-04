@@ -55,6 +55,7 @@
     "eslint-plugin-testing-library": "^6.0.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-vitest": "^0.3.22",
     "prettier-plugin-packagejson": "^2.4.5"
   },
   "devDependencies": {

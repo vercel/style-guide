@@ -88,6 +88,7 @@ The following additional configs are available:
 - `@vercel/style-guide/eslint/playwright-test`
 - `@vercel/style-guide/eslint/react`
 - `@vercel/style-guide/eslint/typescript` (requires `typescript` to be installed and [additional configuration](#configuring-eslint-for-typescript))
+- `@vercel/style-guide/eslint/vitest`
 
 > You'll need to use `require.resolve` to provide ESLint with absolute paths,
 > due to an issue around ESLint config resolution (see
