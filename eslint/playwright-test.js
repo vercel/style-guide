@@ -1,6 +1,7 @@
 module.exports = {
-  extends: [
-    'plugin:playwright/playwright-test',
-    require.resolve('./rules/playwright-test.js'),
-  ],
+  plugins: ['playwright'],
+  extends: [require.resolve('./rules/playwright-test.js')],
+  env: {
+    'shared-node-browser': true,
+  },
 };
