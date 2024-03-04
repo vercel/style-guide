@@ -82,12 +82,6 @@ module.exports = {
      */
     'react/jsx-pascal-case': 'warn',
     /**
-     * Require props to be sorted alphabetically.
-     *
-     * 🔧 Fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-     */
-    'react/jsx-sort-props': 'warn',
-    /**
      * Disallow usage of Array index in keys.
      *
      * 🚫 Not fixable - https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
