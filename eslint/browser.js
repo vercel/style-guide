@@ -1,5 +1,5 @@
 module.exports = {
-  extends: require.resolve('./_base'),
+  extends: './_base',
   env: {
     browser: true,
   },
