@@ -13,12 +13,12 @@ runs:
   using: composite
   steps:
     - name: Set up pnpm
-      uses: pnpm/action-setup@v2
+      uses: pnpm/action-setup@v3
 
     - name: Set up Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version-file: '.node-version'
         cache: pnpm
 
     - name: Install dependencies
