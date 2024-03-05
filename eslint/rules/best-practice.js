@@ -163,12 +163,6 @@ module.exports = {
      */
     'no-return-assign': 'error',
     /**
-     * Disallows unnecessary `return await`.
-     *
-     * 🚫 Not fixable - https://eslint.org/docs/rules/no-return-await
-     */
-    'no-return-await': 'error',
-    /**
      * Disallow use of `javascript:` urls.
      *
      * 🚫 Not fixable - https://eslint.org/docs/rules/no-script-url
