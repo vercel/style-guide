@@ -14,14 +14,7 @@ module.exports = {
      *
      * 🔧 Fixable - https://typescript-eslint.io/rules/consistent-type-imports/
      */
-    '@typescript-eslint/consistent-type-imports': [
-      'warn',
-      {
-        disallowTypeAnnotations: true,
-        fixStyle: 'inline-type-imports',
-        prefer: 'type-imports',
-      },
-    ],
+    '@typescript-eslint/consistent-type-imports': 'warn',
     /**
      * Require explicit return types on functions and class methods.
      *
