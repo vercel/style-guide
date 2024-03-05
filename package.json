@@ -1,6 +1,6 @@
 {
   "name": "@vercel/style-guide",
-  "version": "5.3.0-canary.1",
+  "version": "5.3.0-canary.6",
   "description": "Vercel's engineering style guide",
   "homepage": "https://github.com/vercel/style-guide#readme",
   "bugs": {
@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-playwright": "^0.16.0",
+    "eslint-plugin-playwright": "^1.5.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^6.0.1",
