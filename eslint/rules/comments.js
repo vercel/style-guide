@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['eslint-comments'],
   rules: {
     /**
      * Require comments on ESlint disable directives.

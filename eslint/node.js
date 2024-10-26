@@ -1,6 +1,13 @@
-module.exports = {
-  extends: require.resolve('./_base'),
-  env: {
+const { FlatCompat } = require('@eslint/eslintrc');
+const baseConfig = require('./_base');
+
+const flatCompat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+module.exports = [
+  ...baseConfig,
+  ...flatCompat.env({
     node: true,
-  },
-};
+  }),
+];

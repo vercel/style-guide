@@ -1,6 +1,13 @@
+/**
+ * These are enabled by `unicorn/recommended`.
+ */
+const disabledRules = {
+  'unicorn/prevent-abbreviations': 'off',
+};
+
 module.exports = {
-  plugins: ['unicorn'],
   rules: {
+    ...disabledRules,
     /**
      * Require consistent filename case for all linted files.
      *

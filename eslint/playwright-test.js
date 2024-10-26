@@ -1,7 +1,17 @@
-module.exports = {
-  plugins: ['playwright'],
-  extends: [require.resolve('./rules/playwright-test.js')],
-  env: {
+const { FlatCompat } = require('@eslint/eslintrc');
+
+const { rules } = require('./rules/playwright-test');
+
+const flatCompat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+module.exports = [
+  ...flatCompat.plugins('playwright'),
+  ...flatCompat.env({
     'shared-node-browser': true,
+  }),
+  {
+    rules,
   },
-};
+];
