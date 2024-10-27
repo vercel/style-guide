@@ -1,8 +1,6 @@
 const { FlatCompat } = require('@eslint/eslintrc');
 const jseslint = require('@eslint/js');
-const prettier = require('eslint-plugin-prettier');
 const eslintImport = require('eslint-plugin-import');
-const unicorn = require('eslint-plugin-unicorn');
 const eslintComments = require('eslint-plugin-eslint-comments');
 const babelParser = require('@babel/eslint-parser');
 

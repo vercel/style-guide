@@ -1,4 +1,5 @@
 const { FlatCompat } = require('@eslint/eslintrc');
+
 const baseConfig = require('./_base');
 
 const flatCompat = new FlatCompat({
